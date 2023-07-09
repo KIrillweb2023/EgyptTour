@@ -609,7 +609,7 @@ body {
     color: #ff5029
 }
 
-@media(max-width: 1200px) {
+@media (max-width: 1200px) {
     .container {
         padding: 0 10px
     }
@@ -968,7 +968,7 @@ body {
     }
 }
 
-@media(max-width: 768px) {
+@media (max-width: 768px) {
     .header {
         width: 50%
     }
@@ -1155,7 +1155,7 @@ body {
     }
 }
 
-@media(max-width: 480px) {
+@media (max-width: 480px) {
     .header {
         width: 70%
     }
@@ -1310,7 +1310,7 @@ body {
     }
 }
 
-@media(max-width: 400px) {
+@media (max-width: 400px) {
     .header {
         width: 80%
     }
