@@ -1,0 +1,32 @@
+.work{
+    padding-top: 100px;
+    &__title{
+        text-align: center;
+        font-size: 50px;
+        font-weight: 800;
+    }
+    &__wrapper{
+        margin-top: 40px;
+        display: flex;
+        justify-content: space-around;
+        &-item{
+            width: 330px;
+            height: 450px;
+            border-radius: 20px;
+            background: #FEF4F5;
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
+            align-items: center;
+            img{
+                width: 140px;
+            }
+            .descr{
+                color: #0B0614;
+                text-align: center;
+                font-size: 30px;
+                font-weight: 700;
+            }
+        }
+    }
+}

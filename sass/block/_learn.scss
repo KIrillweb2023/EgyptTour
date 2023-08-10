@@ -1,0 +1,91 @@
+.learn{
+    padding: 150px 0 100px 0 ;
+    height: auto;
+    &__title{
+        color: #0B0614;
+        font-size: 50px;
+        font-weight: 800;
+        text-align: center;
+    }
+    &__wrapper{
+        display: grid;
+        grid-template-columns: repeat(2, minmax(100px, 465px));
+        grid-template-rows: repeat(2, 250px);
+        justify-content: center;
+        gap: 30px;
+        margin-top: 30px;
+        &-item{
+            box-shadow: 0px 30px 60px 0px rgba(129, 126, 126, 0.15), 0px -8px 20px 0px rgba(160, 160, 160, 0.15);
+            border-radius: 20px;
+            padding: 30px;
+            &_text{
+                .title{
+                    color: var(--accent, #FF5029);
+                    font-size: 18px;
+                    font-weight: 700;
+                    border-radius: 5px;
+                    background: #FEF4F5;
+                    height: 40px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                .descr{
+                    color: #0B0614;
+                    font-weight: 700;
+                    position: relative;
+                    margin-top: 20px;
+                    img{
+                        position: absolute;
+                        width: 35px;
+                    }
+                }
+            }
+        }
+        .vertical{
+            grid-row-start: 1;
+            grid-row-end: 3;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            align-items: center;
+            .vertical_img{
+                border-radius: 20px;
+                width: 100%;
+            }
+            &_text{
+                width: 100%;
+                .title{
+                    width: 100px;
+                }
+                .descr{
+                    font-size: 30px;
+                    width: 350px;
+                    margin-top: 20px;
+                }
+            }
+        }
+        .horizontal{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            &_img{
+                width: 150px;
+                height: 220px;
+                border-radius: 20px;
+            }
+            &_text{
+                width: 220px;
+                .title{
+                    width: 150px;
+                }
+                .descr{
+                    font-size: 25px;
+                    width: 250px;
+                    margin-top: 20px;
+                }
+            }
+        }
+       
+    }
+}

@@ -1,0 +1,69 @@
+@import 'block/header';
+@import 'block/promo';
+@import 'block/people';
+@import 'block/work';
+@import 'block/tourist';
+@import 'block/learn';
+@import 'block/footer';
+
+@import 'media/media';
+
+.container{
+    max-width: 1250px;
+    display: block;
+    margin: 0 auto;
+}
+::-webkit-scrollbar{
+    width: 0;
+}
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+button, input{
+    outline: none;
+}
+a{
+    text-decoration: none;
+    &:hover{
+        text-decoration: underline;
+    }
+}
+
+.floating{
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    width: 100%;
+    background: #fff;
+    height: auto;
+    z-index: -1;
+    left: -11px;
+    border-radius: 10px;
+    box-shadow: 0px 30px 60px 0px rgba(198, 191, 191, 0.18);
+    &.active{
+        opacity: 1;
+        transition: 0.6s all;
+        top: 25px;
+    }
+    .text{
+        cursor: pointer;
+        padding-left: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        &:hover{
+            background: #FF5029;
+            border-radius: 10px;
+        }
+    }
+}
+li{
+    list-style-type: none;
+}
+.close{
+    display: none;
+}
+.hamburger{
+    display: none;
+}

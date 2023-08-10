@@ -1,0 +1,785 @@
+@media (max-width: 1200px){
+    .container{
+        padding: 0 10px;
+    }
+    .header {
+        height: auto;
+        padding: 15px 0px;
+        &__input{
+            width: 220px;
+            .input{
+                width: 175px;
+            }
+        }
+        .logo{
+            width: 500px;
+            &__text{
+                padding: 0 20px;
+                font-size: 24px;
+            }
+        }
+        &__menu{
+            padding-right: 15px;
+            &-button{
+                padding: 15px 25px;
+            }
+        }
+    }
+    .promo{
+        margin-top: 5px;
+        &__bg{
+            height: 500px;
+        }
+        &__wrapper{
+            top: 440px;
+            padding: 25px;
+            width: 880px;
+            &-descr{
+                font-size: 16px;
+                min-width: 150px;
+            }
+            &-title{
+                font-size: 14px;
+            }
+            &-btn{
+                width: 100px;
+                height: 60px;
+                font-size: 16px;
+                border-radius: 10px
+            }
+        }
+    }
+    .people{
+        padding-top: 100px;
+        &__items{
+            .title{
+                font-size: 35px;
+            }
+            .button{
+                padding: 10px 40px;
+                font-size: 16px;
+            }
+        }
+        &__wrapper{
+            &-item{
+                padding: 30px 15px 40px 15px;
+                height: 285px;
+            }
+            &-img{
+                width: 150px;
+            }
+        }
+    }
+    .work{
+        padding-top: 70px;
+        &__title{
+            font-size: 35px;
+        }
+        &__wrapper{
+            &-item{
+                width: 285px;
+                height: 350px;
+                img{
+                    width: 120px;
+                }
+                .descr{
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+    .tourist{
+        &__bg{
+            height: 500px;
+        }
+        &__wrapper{
+            width: 850px;
+            top: 415px;
+            padding: 15px 35px 15px 35px;
+            &-item{
+                .title{
+                    font-size: 25px;
+                }
+                height: 115px;
+            }
+            &-btn{
+                padding: 5px 40px;
+                border-radius: 5px;
+            }
+        }    
+    }
+    .learn{
+        padding: 100px 0 150px 0;
+        &__title{
+            font-size: 35px;
+        }
+        &__wrapper{
+            .vertical{
+                grid-column-start: 1;
+                grid-column-end: 3;
+                &_img{
+                    width: 100%;
+                    height: 300px;
+                    object-fit: cover;
+                }
+            }
+            .horizontal{
+                &_text{
+                    .descr{
+                        width: 220px;
+                    }
+                }
+            }
+        } 
+    }
+}
+@media (max-width: 992px){
+    .header{
+        position: fixed;
+        top: 0;
+        left: -100%;
+        height: 100%;
+        width: 40%;
+        z-index: 10;
+        visibility: hidden;
+        opacity: 0;
+        transition: 0.6s all;
+        background: #fff;
+        padding: 70px 10px 10px 10px;
+        &.active{
+            left: 0;
+            visibility: visible;
+            opacity: 1;
+        }
+        .close{
+            display: block;
+            width: 30px;
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            cursor: pointer;
+            img{
+                width: 100%;
+            }
+        }
+        .overlay{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #fff;
+            opacity: .75;
+            z-index: -1;
+        }
+        nav{
+            align-items: center;
+            flex-direction: column;
+            justify-content: space-between;
+            height: auto;
+        }
+        .logo{
+            flex-direction: column;
+            width: auto;
+            align-items: center;
+            &__text{
+                border-right: none;
+                padding: 0;
+                text-align: center;
+                font-size: 34px;
+            }
+        }
+        &__input{
+            margin-top: 30px;
+            width: 240px;
+            .input{
+                box-shadow: 1px 5px 20px #e2e2e2;
+            }
+            img{
+                box-shadow: 1px 5px 20px #e2e2e2;
+                padding: 8px;
+            }
+        }
+        &__menu{
+            flex-direction: column;
+            width: auto;
+            height: 60vh;
+            justify-content: space-between;
+            padding-right: 0;
+            align-items: unset;
+            &-link{
+                font-size: 26px;
+            }
+        }
+    }
+    .promo{
+        position: relative;
+        .hamburger{
+            display: block;
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            cursor: pointer;
+        }
+        &__wrapper{
+            padding: 15px;
+            width: 670px;
+            &-btn{
+                width: 70px;
+                height: 40px;
+            }
+            &-descr{
+                min-width: 100px;
+            }
+        }
+    }
+    .people{
+        &__wrapper{
+            flex-wrap: wrap;
+            justify-content: center;
+            &-item{
+                padding: 30px 85px 40px 85px;
+                margin-top: 10px;
+            }
+        }
+    }
+    .work{
+        &__wrapper{
+            flex-wrap: wrap;
+            &-item{
+                width: 360px;
+                margin-top: 10px;
+            }
+        }
+    }
+    .tourist{
+        &__wrapper{
+            height: 90px;
+            width: 650px;
+            &-item{
+                .title{
+                    font-size: 20px;
+                }
+            }
+            &-btn{
+                padding: 10px 15px;
+                font-size: 14px;
+            }
+            &-descr{
+                width: 205px;
+                img{
+                    width: 100px;
+                }
+                .text{
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    .learn{
+        &__wrapper{
+            &-item{
+                padding: 15px;
+            }
+            .horizontal{
+                &_text{
+                    .title{
+                        font-size: 14px;
+                        width: 110px;
+                    }
+                    .descr{
+                        font-size: 20px;
+                        width: 155px;
+                    }
+                    img{
+                        width: 28px;
+                    }
+                }
+            }
+            .vertical{
+                justify-content: space-around;
+                &_text{
+                    .descr{
+                        width: 300px;
+                        font-size: 25px;
+                    }
+                }
+            }
+        }
+    }
+    .footer{
+        &__wrapper{
+            flex-wrap: wrap;
+            &-contact{
+                margin-top: 30px;
+            }
+            &-text{
+                .descr{
+                    margin-top: 15px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 768px){
+    .header{
+        width: 50%;
+    }
+    .promo{
+        &__bg{
+            height: 350px;
+        }
+        &__wrapper{
+            width: 475px;
+            top: 300px;
+            flex-wrap: wrap;
+            height: 150px;
+            &-descr{
+                width: 125px;
+            }
+            &-btn{
+                width: 300px;
+                height: 50px;
+            }
+        }
+    }
+    .people{
+        padding-top: 200px;
+        &__items{
+            .title{
+                font-size: 25px;
+            }
+        }
+        &__wrapper{
+            &-item{
+                padding: 30px 175px 40px 175px;
+            }
+        }
+    }
+    .work{
+        &__title{
+            font-size: 25px;
+        }
+    }
+    .tourist{
+        &__bg{
+            height: 350px;
+        }
+        &__wrapper{
+            width: 440px;
+            top: 285px;
+            height: 70px;
+            &-btn{
+                padding: 10px 5px;
+            }
+            &-item{
+                height: 90px;
+                .title{
+                    font-size: 16px;
+                }
+            }
+            &-descr{
+                width: 180px;
+                img{
+                    width: 80px;
+                }
+                .text{
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+    .learn{
+        padding: 100px 0 60px 0;
+        &__wrapper{
+            .horizontal{
+                grid-column-start: 1;
+                grid-column-end: 3;
+                &_img{
+                    width: 300px;
+                    object-fit: cover;
+                }
+                &_text{
+                    .descr{
+                        width: 190px;
+                    }
+                }
+            }
+        }
+    }
+    .footer{
+        &__wrapper{
+            .linkTop{
+                margin-top: 30px;
+            }
+        }
+    }
+}
+@media (max-width: 567px){
+    .header{
+        width: 60%;
+    }
+    .promo{
+        &__wrapper{
+            width: 405px;
+            height: 215px;
+            &-descr{
+                width: 175px;
+                margin-top: 0px;
+            }
+            &-btn{
+                width: 100%;
+                margin-top: 20px;
+            }
+            &-item{
+                margin-top: 15px;
+            }
+        }
+    }
+    .people{
+        padding-top: 260px;
+        &__wrapper{
+            &-item{
+                width: 100%;
+                padding: 15px 0;
+            }
+        }
+    }
+    .tourist{
+        &__wrapper{
+            flex-wrap: wrap;
+            width: 360px;
+            justify-content: center;
+            height: 95px;
+            &-item{
+                flex-direction: row;
+                height: 50px;
+                width: 100%;
+            }
+        }
+    }
+    .learn{
+        font-size: 25px;
+        &__title{
+            font-size: 30px;
+        }
+        &__wrapper{
+            .horizontal{
+                &_text{
+                    width: 160px;
+                    .descr{
+                        width: 160px;
+                    }
+                }
+                &_img{
+                    width: 230px;
+                }
+            }
+            .vertical{
+                &_text{
+                    .title{
+                        font-size: 14px;
+                    }
+                    .descr{
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+    .footer{
+        &__wrapper{
+            &-text{
+                width: 250px;
+                .descr{
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+            }
+            &-links{
+                a{
+                    margin-top: 15px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 480px){
+    .header{
+        width: 70%;
+        &__menu{
+            &-link{
+                font-size: 22px;
+            }
+        }
+    }
+    .promo{
+        &__bg{
+            height: 260px;
+        }
+        &__wrapper{
+            width: 320px;
+            top: 235px;
+            box-shadow: 0 30px 60px 0 rgb(102 100 100 / 18%);
+            &-item{
+
+            }
+            &-descr{
+                width: 150px;
+            }
+            &-descr{
+                font-size: 14px;
+            }
+        }
+    }
+    .people{
+        &__wrapper{
+          &-item{
+            .title{
+                font-size: 18px;
+            }
+            .descr{
+                font-size: 14px;
+            }
+          }
+        }
+        &__items{
+            .title{
+                font-size: 20px;
+            }
+            .button{
+                padding: 5px 25px;
+                font-size: 14px;
+            }
+        }
+    }
+    .work{
+        &__wrapper{
+            &-item{
+                .descr{
+                    font-size: 20px;
+                }
+              
+            }
+        }
+    }
+    .tourist{
+        &__bg{
+            height: 260px;
+        }
+        &__wrapper{
+            width: 280px;
+            height: 150px;
+            top: 210px;
+            &-item{
+                flex-wrap: wrap;
+                height: auto;
+            }
+        }
+    }
+    .learn{
+        padding: 154px 0 60px 0;
+        &__title{
+            font-size: 20px;
+        }
+        &__wrapper{
+            .vertical{
+                grid-row-start: 1;
+                grid-row-end: 2;
+                &_img{
+                    height: 130px;
+                }
+                &_text{
+                    .title{
+                        height: 30px;
+                    }
+                    .descr{
+                        font-size: 16px;
+                        img{
+                            width: 24px;
+                        }
+                    }
+                }
+            }
+            .horizontal{
+                &_img{
+                    width: 150px;
+                }
+                &_text{
+                    .descr{
+                        font-size: 16px;
+                        img{
+                            width: 24px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .footer{
+        &__wrapper{
+            &-text{
+                width: 200px;
+                .title{
+                    font-size: 25px;
+                }
+                .descr{
+                    font-size: 14px;
+                }
+            }
+            &-links{
+                .title{
+                    font-size: 18px;
+                }
+                a{
+                    margin-top: 10px;
+                }
+            }
+            &-contact{
+                .title{
+                    font-size: 18px;
+                }
+                .email_text{
+                    font-size: 14px;
+                    width: 185px;
+                }
+                .location_text{
+                    font-size: 14px;
+                    width: 185px;
+                }
+                &_messange{
+                    width: 170px;
+                    img{
+                        width: 35px;
+                    }
+                }
+            }
+        }
+        &__subwrapper{
+            .item{
+                font-size: 14px;
+                a{
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 400px){
+    .header{
+        width: 80%;
+        .logo{
+            &__text{
+                font-size: 30px;
+            }
+        }
+        &__menu{
+            &-link{
+                font-size: 20px;
+            }
+        }
+    }
+    .promo{
+        &__bg{
+            height: 200px;
+        }
+        &__wrapper{
+            width: 270px;
+            border-radius: 10px;
+            top: 170px;
+            padding: 10px;
+            &-btn{
+                border-radius: 5px;
+                height: 30px;
+                margin-top: 0;
+                font-size: 14px;
+            }
+            &-descr{
+                width: 115px;
+            }
+        }
+    }
+    .people{
+        &__wrapper{
+            &-item{
+                height: 210px;
+                .title{
+                    font-size: 16px;
+                }
+            }
+            &-img{
+                width: 110px;
+            }
+        }
+       
+    }
+    .work{
+        &__title{
+            font-size: 20px;
+        }
+        &__wrapper{
+            margin-top: 5px;
+            &-item{
+                height: 250px;
+                img{
+                    width: 90px;
+                }
+                .descr{
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    .tourist{
+        &__bg{
+            height: 200px;
+        }
+        &__wrapper{
+            padding: 0;
+            height: 155px;
+            top: 130px;
+            border-radius: 10px;
+        }
+    }
+    .learn{
+        &__wrapper{
+            .horizontal{
+                &_img{
+                    width: 130px;
+                }
+                &_text{
+                    width: 125px;
+                    .descr{
+                        width: 125px;
+                    }
+                }
+            }
+        }
+    }
+    .footer{
+        .line{
+            margin-top: 20px;
+        }
+        &__wrapper{
+            &-text{
+                width: 100%;
+            }
+            .topLink{
+                margin-top: 30px;
+            }
+            &-links{
+                a{
+                    font-size: 14px;
+                }
+            }
+        }
+        &__subwrapper{
+            justify-content: center;
+            display: flex;
+            flex-wrap: wrap;
+            .item{
+                margin-top: 5px;
+            }
+        }
+    }
+}

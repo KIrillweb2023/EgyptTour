@@ -1,0 +1,61 @@
+.header{
+    height: auto;
+    padding: 15px 80px;
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__menu{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-right: 40px;
+        &-link{
+            font-size: 16px;
+            font-weight: 700;
+            color: #000;
+        }
+        &-item{
+            list-style-type: none;
+        }
+        &-button{
+            padding: 20px 30px;
+            border-radius: 12px;
+            background: #FF5029;
+            font-weight: 700;
+            border: none;
+            color: #fff;
+            cursor: pointer;
+        }
+    }
+    .logo{
+        display: flex;
+        justify-content: space-around;
+        width: 600px;
+        &__text{
+            padding: 0 30px;
+            font-size: 28px;
+            font-weight: 800;
+            line-height: 36px;
+            border-right: 1px solid rgba(11, 6, 20, 0.30);
+        }
+    }
+    &__input{
+        width: 330px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        img{
+            width: 25px;
+        }
+        .input{
+            width: 300px;
+            color: rgba(11, 6, 20, 0.699);
+            border: none;
+            padding: 10px;
+            font-size: 16px;
+        }
+    }
+}
